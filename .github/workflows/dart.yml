@@ -28,5 +28,5 @@ jobs:
       with:
         artifacts: "build/app/outputs/apk/debug/*.apk"
         token: ${{ secrets.Token }}
-        commit: master
-        tag: v1.0."${{ github.run_number }}"
+        commit: main
+        tag: v1.0.${{ github.run_number }}
