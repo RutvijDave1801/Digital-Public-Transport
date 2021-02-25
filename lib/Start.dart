@@ -6,7 +6,6 @@ import 'SignUp.dart';
 
 class Start extends StatefulWidget {
   @override
-
   _StartState createState() => _StartState();
 }
 
@@ -48,13 +47,13 @@ class _StartState extends State<Start> {
                         fontWeight: FontWeight.bold,
                         color: Colors.black),
                     children: <TextSpan>[
-                  TextSpan(
-                      text: 'Public Transport',
-                      style: TextStyle(
-                          fontSize: 30.0,
-                          fontWeight: FontWeight.bold,
-                          color: Colors.orange))
-                ])),
+                      TextSpan(
+                          text: 'Public Transport',
+                          style: TextStyle(
+                              fontSize: 30.0,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.orange))
+                    ])),
             SizedBox(height: 10.0),
             Text(
               'One step for you daily transportation needs',
@@ -96,7 +95,6 @@ class _StartState extends State<Start> {
                       borderRadius: BorderRadius.circular(10.0),
                     ),
                     color: Colors.orange),
-
               ],
             ),
 
@@ -109,9 +107,9 @@ class _StartState extends State<Start> {
             ),
             //SizedBox(height: 20.0),
             //SignInButton(
-             // Buttons.Google,
-             // text: "Sign up with Google",
-              //onPressed: () {},
+            // Buttons.Google,
+            // text: "Sign up with Google",
+            //onPressed: () {},
             //)
           ],
         ),

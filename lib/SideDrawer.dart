@@ -1,6 +1,10 @@
+import 'package:authentification/Login.dart';
+import 'package:authentification/SignUp.dart';
 import 'package:authentification/main.dart';
 import 'package:flutter/material.dart';
 import 'package:authentification/HomePage.dart';
+import 'package:authentification/PaymentPage.dart';
+
 class SideDrawer extends MyApp {
   @override
   Widget build(BuildContext context) {
@@ -20,12 +24,27 @@ class SideDrawer extends MyApp {
             ),
           ),
           ListTile(
-            leading: Icon(Icons.home),
-            title: Text('Home'),
+              leading: Icon(Icons.home),
+              title: Text('Home'),
               onTap: () {
                 Navigator.push(context,
                     MaterialPageRoute(builder: (context) => HomePage()));
-              }
+              }),
+          ListTile(
+            leading: Icon(Icons.how_to_reg),
+            title: Text('Register'),
+            onTap: () {
+              Navigator.push(
+                  context, MaterialPageRoute(builder: (context) => SignUp()));
+            },
+          ),
+          ListTile(
+            leading: Icon(Icons.login),
+            title: Text('Login'),
+            onTap: () {
+              Navigator.push(
+                  context, MaterialPageRoute(builder: (context) => Login()));
+            },
           ),
           ListTile(
             leading: Icon(Icons.departure_board),
@@ -35,7 +54,10 @@ class SideDrawer extends MyApp {
           ListTile(
             leading: Icon(Icons.account_balance_wallet),
             title: Text('Payment'),
-            onTap: () => {Navigator.of(context).pop()},
+            onTap: () {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => PaymentPage()));
+            },
           ),
           ListTile(
             leading: Icon(Icons.qr_code_sharp),
@@ -60,10 +82,7 @@ class SideDrawer extends MyApp {
             ),
           ),
         ],
-
-
       ),
     );
   }
-
 }
