@@ -4,6 +4,7 @@ import 'package:authentification/main.dart';
 import 'package:flutter/material.dart';
 import 'package:authentification/HomePage.dart';
 import 'package:authentification/PaymentPage.dart';
+import 'package:authentification/QRHomePage.dart';
 
 class SideDrawer extends MyApp {
   @override
@@ -62,7 +63,10 @@ class SideDrawer extends MyApp {
           ListTile(
             leading: Icon(Icons.qr_code_sharp),
             title: Text('QR_Code'),
-            onTap: () => {Navigator.of(context).pop()},
+            onTap: () {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => QRHomePage()));
+            },
           ),
           ListTile(
             leading: Icon(Icons.exit_to_app),

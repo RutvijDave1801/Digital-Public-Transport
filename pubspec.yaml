@@ -23,6 +23,9 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  qr_flutter: ^3.2.0
+  barcode_scan: ^3.0.1
+  url_launcher: ^5.7.2
   razorpay_flutter: 1.1.0
   fluttertoast: ^3.0.4
   eventify: ^0.1.4
@@ -55,7 +58,7 @@ flutter:
     - images/welcome.jpg
     - images/giphy.jpg
     - images/made.jpg
-
+    - images/QR.jpg
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
