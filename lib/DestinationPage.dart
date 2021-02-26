@@ -1,9 +1,5 @@
 import 'package:authentification/PaymentPage.dart';
-import 'package:authentification/SideDrawer.dart';
 import 'package:flutter/material.dart';
-import 'package:authentification/PaymentPage.dart';
-import 'package:authentification/Login.dart';
-import 'SignUp.dart';
 
 class DestinationPage extends StatefulWidget {
   @override

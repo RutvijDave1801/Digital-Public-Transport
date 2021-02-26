@@ -6,7 +6,6 @@ import 'package:authentification/main.dart';
 import 'package:flutter/material.dart';
 import 'package:authentification/HomePage.dart';
 import 'package:authentification/PaymentPage.dart';
-import 'package:authentification/Logout.dart';
 import 'package:authentification/DestinationPage.dart';
 
 class SideDrawer extends MyApp {

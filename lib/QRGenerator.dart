@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:authentification/HomePage.dart';
 import 'GeneratedQR.dart';
 
 class QRGenerator extends StatefulWidget {

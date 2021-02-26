@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'HomePage.dart';
+import 'package:authentification/Login.dart';
 
 class SignUp extends StatefulWidget {
   @override
@@ -17,7 +18,7 @@ class _SignUpState extends State<SignUp> {
     _auth.onAuthStateChanged.listen((user) async {
       if (user != null) {
         Navigator.push(
-            context, MaterialPageRoute(builder: (context) => HomePage()));
+            context, MaterialPageRoute(builder: (context) => Login()));
       }
     });
   }
