@@ -23,13 +23,24 @@ class _QRGeneratorState extends State<QRGenerator> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
+            Container(
+              height: 300,
+              child: Image(
+                image: AssetImage("images/QR.jpg"),
+                fit: BoxFit.contain,
+              ),
+            ),
             Padding(
               padding: const EdgeInsets.all(15),
               child: TextFormField(
+                validator: (input) {
+                  if (input.isEmpty) return 'Enter Transaction ID';
+                },
                 controller: mycontroller,
                 decoration: InputDecoration(
                   errorStyle: TextStyle(color: Colors.red, fontSize: 15.0),
                   labelText: "Enter the Transaction ID for generating a QR",
+
                   hintStyle: TextStyle(
                     color: Colors.grey,
                     fontSize: 16.0,
@@ -41,26 +52,22 @@ class _QRGeneratorState extends State<QRGenerator> {
                 onEditingComplete: navigate,
               ),
             ),
-            Container(
-              width: ((MediaQuery.of(context).size.width) / 2) - 45,
-              height: 35,
-              child: OutlineButton(
-                focusColor: Colors.red,
-                highlightColor: Colors.orange,
-                hoverColor: Colors.orange[100],
-                splashColor: Colors.orange,
-                borderSide: BorderSide(
-                  width: 3,
-                  color: Colors.orange,
-                ),
-                shape: StadiumBorder(),
-                child: Text(
-                  "Generate QR",
-                  style: TextStyle(fontSize: 17),
-                ),
+
+            RaisedButton(
+                padding: EdgeInsets.only(left: 30, right: 30),
                 onPressed: navigate,
-              ),
-            ),
+                child: Text(
+                  'Generate Now',
+                  style: TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.white,
+                  ),
+                ),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(10.0),
+                ),
+                color: Colors.orange),
           ],
         ),
       ),

@@ -1,10 +1,13 @@
 import 'package:authentification/Login.dart';
+import 'package:authentification/Logout.dart';
+import 'package:authentification/QRGenerator.dart';
 import 'package:authentification/SignUp.dart';
 import 'package:authentification/main.dart';
 import 'package:flutter/material.dart';
 import 'package:authentification/HomePage.dart';
 import 'package:authentification/PaymentPage.dart';
-import 'package:authentification/QRHomePage.dart';
+import 'package:authentification/Logout.dart';
+import 'package:authentification/DestinationPage.dart';
 
 class SideDrawer extends MyApp {
   @override
@@ -50,7 +53,9 @@ class SideDrawer extends MyApp {
           ListTile(
             leading: Icon(Icons.departure_board),
             title: Text('Destination'),
-            onTap: () => {Navigator.of(context).pop()},
+            onTap: () {Navigator.push(
+                context, MaterialPageRoute(builder: (context) => DestinationPage()));
+            },
           ),
           ListTile(
             leading: Icon(Icons.account_balance_wallet),
@@ -65,13 +70,15 @@ class SideDrawer extends MyApp {
             title: Text('QR_Code'),
             onTap: () {
               Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => QRHomePage()));
+                  MaterialPageRoute(builder: (context) => QRGenerator()));
             },
           ),
           ListTile(
             leading: Icon(Icons.exit_to_app),
             title: Text('Logout'),
-            onTap: () => {Navigator.of(context).pop()},
+            onTap: ()  {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => Logout()));},
           ),
           Expanded(
             child: Container(

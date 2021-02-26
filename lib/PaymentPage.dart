@@ -22,10 +22,20 @@ class _MyAppState extends State<PaymentPage> {
         title: const Text('Payment Home'),
         centerTitle: true,
       ),
-      body: Center(
-          child: Row(
+      body: Container(
+          child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
+                Container(
+                  height: 400,
+                  child: Image(
+                    image: AssetImage("images/payment.jpg"),
+                    fit: BoxFit.contain,
+                  ),
+                ),
+
+                SizedBox(width: 1000),
+                SizedBox(height: 70.0),
                 RaisedButton(
                     padding: EdgeInsets.only(left: 30, right: 30),
                     onPressed: openCheckout,
