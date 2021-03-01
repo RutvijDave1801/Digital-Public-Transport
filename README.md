@@ -6,3 +6,7 @@
  For Project Defination: https://drive.google.com/drive/folders/1bQPYklf37567hBk2GpU83N8Mfn1A9b8C
 
  For Flow map: https://drive.google.com/file/d/1uuiqRvppiGtxuyjWQ7DXqr7w7MhFl4PB/view?usp=sharing
+ 
+ For Test Script: https://github.com/RutvijDave1801/Digital-Public-Transport/blob/main/first_test.py
+ 
+ For payments: https://razorpay.com/docs/payment-gateway/flutter-integration/
