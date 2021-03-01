@@ -1,6 +1,6 @@
 import 'package:authentification/Start.dart';
 import 'package:flutter/material.dart';
-
+import 'package:firebase_auth/firebase_auth.dart';
 
 class Logout extends StatefulWidget {
   @override
@@ -8,9 +8,14 @@ class Logout extends StatefulWidget {
 }
 
 class _StartState extends State<Logout> {
-  navigateToHome() async {
-    Navigator.push(context, MaterialPageRoute(builder: (context) => Start()));
+  final FirebaseAuth _auth = FirebaseAuth.instance;
+  FirebaseUser user;
+  bool isloggedin= false;
+  signOut()async{
+
+    _auth.signOut();
   }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -54,7 +59,7 @@ class _StartState extends State<Logout> {
               children: <Widget>[
                 RaisedButton(
                     padding: EdgeInsets.only(left: 30, right: 30),
-                    onPressed: navigateToHome,
+                    onPressed: signOut,
                     child: Text(
                       'LOGOUT',
                       style: TextStyle(
