@@ -62,7 +62,7 @@ flutter:
     - images/made.jpg
     - images/QR.jpg
     - images/thanks.jpg
-    - images/Destination.jpg
+    - images/Destination.jpg/
     - images/payment.jpg
 
   #   - images/a_dot_ham.jpeg
