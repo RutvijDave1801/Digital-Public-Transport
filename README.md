@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://getbootstrap.com/">
-    <img src="https://github.com/RutvijDave1801/Digital-Public-Transport/blob/6f98efc8761cd3790d11e4c3ef4213dccefdd12d/images/Logo.jpg" alt="Bootstrap logo" width="200" height="165">
+    <img src="https://www.google.com/search?q=publictransportation+logo+orange&tbm=isch&ved=2ahUKEwiAp5ipqq_vAhUEFHIKHRQ5B9sQ2-cCegQIABAA&oq=publictransportation+logo+orange&gs_lcp=CgNpbWcQA1DNP1iXXmCxX2gEcAB4AIABeYgB7gmSAQQwLjExmAEAoAEBqgELZ3dzLXdpei1pbWfAAQE&sclient=img&ei=mcRNYMD2OYSoyAOU8pzYDQ&bih=578&biw=1280#imgrc=SjpXkTSfbDlEDM" alt="dpt logo" width="200" height="165">
   </a>
 </p>
 
@@ -86,9 +86,11 @@ Have a bug or a feature request? Please first read the [Open the issue](https://
 ### Documentation for previous releases
 
 
-## Contributing
+## Contributers
 **Rutvij Dave**
+
 **Amisha Tagore**
+
 **Harsh Sevani**
 
 
@@ -112,7 +114,6 @@ For transparency into our release cycle and in striving to maintain backward com
 
 
 ## Backers
-
 
 
 ## Copyright and license
