@@ -27,7 +27,7 @@ class _StartState extends State<DestinationPage> {
             Container(
               height: 400,
               child: Image(
-                image: AssetImage("images/destination.jpg"),
+                image: AssetImage("images/reach.jpg"),
                 fit: BoxFit.contain,
               ),
             ),
