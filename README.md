@@ -10,3 +10,8 @@
  For Test Script: https://github.com/RutvijDave1801/Digital-Public-Transport/blob/main/first_test.py
  
  For payments: https://razorpay.com/docs/payment-gateway/flutter-integration/
+ 
+ To download our latest apk: 
+https://github.com/RutvijDave1801/Digital-Public-Transport/releases/download/v1.0.40/app-arm64-v8a-debug.apk
+https://github.com/RutvijDave1801/Digital-Public-Transport/releases/download/v1.0.40/app-armeabi-v7a-debug.apk
+https://github.com/RutvijDave1801/Digital-Public-Transport/releases/download/v1.0.40/app-x86_64-debug.apk
