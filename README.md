@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://getbootstrap.com/">
-    <img src="https://p1.hiclipart.com/preview/711/441/301/travel-ticket-bus-train-hotel-public-transport-event-tickets-internet-booking-engine-public-transport-bus-service-png-clipart.jpg" alt="dpt logo" width="200" height="165">
+    <img src="https://thumbs.dreamstime.com/b/big-bus-logo-silhouette-graphic-vector-perfect-icon-etc-183420504.jpg" alt="dpt logo" width="200" height="165">
   </a>
 </p>
 
