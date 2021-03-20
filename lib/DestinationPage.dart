@@ -30,7 +30,7 @@ class _StartState extends State<DestinationPage> {
                 image: AssetImage("images/reach.jpg"),
                 fit: BoxFit.contain,
               ),
-            ),
+            ),//Rutvij Dave
 
 
             SizedBox(height: 190.0),
