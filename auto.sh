@@ -1,4 +1,3 @@
-sleep 5
 adb shell input tap 324 1772
 sleep 3 
 adb shell input tap 196 1306
