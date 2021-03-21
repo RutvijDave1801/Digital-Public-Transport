@@ -19,7 +19,8 @@ adb shell input tap 560 1728
 sleep 3 
 adb shell input tap 530 1679
 sleep 3 
-adb shell input tap 270 1252
+adb shell input tap 270 992
+#adb shell input tap 270 1252 #Transaction
 sleep 3
 adb shell input tap 245 1375
 sleep 3
@@ -69,7 +70,8 @@ adb shell input tap 560 1728
 sleep 3
 adb shell input tap 530 1679
 sleep 3
-adb shell input tap 270 1252
+adb shell input tap 270 992
+#adb shell input tap 270 1252 #Transaction
 sleep 3
 adb shell input tap 245 1375
 sleep 3
@@ -92,3 +94,4 @@ sleep 3
 adb shell input tap 545 1969
 sleep 3
 adb shell input tap 515 1699
+exit
