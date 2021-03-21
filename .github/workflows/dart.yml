@@ -22,7 +22,7 @@ jobs:
     - run: flutter doctor -v
     - run: flutter pub get
     - run: flutter clean
-    - run: flutter build apk 
+    - run: flutter build apk --split-per-abi--no-shrink 
     - name: Create a Release APK
       uses: ncipollo/release-action@v1.7.3
       with:
