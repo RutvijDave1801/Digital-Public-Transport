@@ -37,7 +37,7 @@ wait
 adb shell am start -n "com.example.authentification/com.example.authentification.MainActivity" -a android.intent.action.MAIN -c android.intent.category.LAUNCHER
 print_blue "\n\n\n Launched main activity\n"
 print_green "\n\n\nNow Lets Start the test\n"
-sleep 30
+sleep 120
 sh ./auto.sh
 wait
 print_green "\n\n\n Testing Completed\n"
