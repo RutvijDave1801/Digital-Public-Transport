@@ -1,6 +1,5 @@
 import 'package:authentification/Login.dart';
 import 'package:authentification/Logout.dart';
-import 'package:authentification/QRGenerator.dart';
 import 'package:authentification/SignUp.dart';
 import 'package:authentification/main.dart';
 import 'package:flutter/material.dart';
@@ -64,14 +63,7 @@ class SideDrawer extends MyApp {
                   MaterialPageRoute(builder: (context) => PaymentPage()));
             },
           ),
-          ListTile(
-            leading: Icon(Icons.qr_code_sharp),
-            title: Text('QR_Code'),
-            onTap: () {
-              Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => QRGenerator()));
-            },
-          ),
+
           ListTile(
             leading: Icon(Icons.exit_to_app),
             title: Text('Logout'),

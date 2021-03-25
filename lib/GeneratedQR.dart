@@ -41,7 +41,7 @@ class _GeneratedQRState extends State<GeneratedQR> {
                 context: context,
                 builder: (ctx) => AlertDialog(
                   title: Text("Alert Dialog Box"),
-                  content: Text("Your QR is now stored to Galary"),
+                  content: Text("Please Take a Screenshot of your QR"),
                   actions: <Widget>[
                     FlatButton(
                       onPressed: () {
