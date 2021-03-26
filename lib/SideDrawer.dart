@@ -5,7 +5,7 @@ import 'package:authentification/main.dart';
 import 'package:flutter/material.dart';
 import 'package:authentification/HomePage.dart';
 import 'package:authentification/PaymentPage.dart';
-import 'package:authentification/DestinationPage.dart';
+import 'package:authentification/DestinationHome.dart';
 
 class SideDrawer extends MyApp {
   @override
@@ -52,7 +52,7 @@ class SideDrawer extends MyApp {
             leading: Icon(Icons.departure_board),
             title: Text('Destination'),
             onTap: () {Navigator.push(
-                context, MaterialPageRoute(builder: (context) => DestinationPage()));
+                context, MaterialPageRoute(builder: (context) => DestinationHome()));
             },
           ),
           ListTile(
