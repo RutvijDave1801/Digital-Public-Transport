@@ -1,8 +1,8 @@
 import 'package:authentification/HomePage.dart';
 import 'package:flutter/material.dart';
 import 'HomePage.dart';
-
-void main() => runApp(MyApp());
+import 'package:firebase_core/firebase_core.dart';
+//void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
   @override
@@ -14,4 +14,9 @@ class MyApp extends StatelessWidget {
 
     );///main app
   }
+}
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
+  runApp(MyApp());
 }

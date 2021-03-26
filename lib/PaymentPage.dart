@@ -139,18 +139,18 @@ class _MyAppState extends State<PaymentPage> {
 
   void _handlePaymentSuccess(PaymentSuccessResponse response) {
     Fluttertoast.showToast(
-        msg: "SUCCESS:\n\n\n<b> Once you see this message click on Generate QR now<b>\n\n\n"+response.paymentId, timeInSecForIos: 4,backgroundColor: Colors.orange,toastLength: Toast.LENGTH_LONG);
+        msg: "SUCCESS:\n\n\n Once you see this message click on Generate QR now \n\n\n"+response.paymentId, timeInSecForIosWeb: 4,backgroundColor: Colors.orange,toastLength: Toast.LENGTH_LONG);
   }
 
   void _handlePaymentError(PaymentFailureResponse response) {
     Fluttertoast.showToast(
         msg: "ERROR: " + response.code.toString() + " - " + response.message,
-        timeInSecForIos: 4);
+        timeInSecForIosWeb: 4);
   }
 
   void _handleExternalWallet(ExternalWalletResponse response) {
     Fluttertoast.showToast(
-        msg: "EXTERNAL_WALLET: " + response.walletName, timeInSecForIos: 4);
+        msg: "EXTERNAL_WALLET: " + response.walletName, timeInSecForIosWeb: 4);
   }
   void navigate() {
     print(textEditingController.text);
@@ -159,4 +159,4 @@ class _MyAppState extends State<PaymentPage> {
         MaterialPageRoute(
             builder: (context) => GeneratedQR(textEditingController.text)));
   }
-  }
+}

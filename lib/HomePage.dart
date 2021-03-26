@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:authentification/Start.dart';
 
 class HomePage extends StatefulWidget {
+
   @override
   _HomePageState createState() => _HomePageState();
 
@@ -11,13 +12,13 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
 
   final FirebaseAuth _auth = FirebaseAuth.instance;
-  FirebaseUser user;
+  User user;
   bool isloggedin= false;
 
 
   checkAuthentification() async{
 
-    _auth.onAuthStateChanged.listen((user) {
+    FirebaseAuth.instance.authStateChanges().listen((user) {
 
       if(user ==null)
       {
@@ -28,9 +29,9 @@ class _HomePageState extends State<HomePage> {
 
   getUser() async{
 
-    FirebaseUser firebaseUser = await _auth.currentUser();
+    User firebaseUser = await _auth.currentUser;
     await firebaseUser?.reload();
-    firebaseUser = await _auth.currentUser();
+    firebaseUser = await _auth.currentUser;
 
     if(firebaseUser !=null)
     {

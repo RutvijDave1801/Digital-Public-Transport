@@ -15,7 +15,7 @@ class _LoginState extends State<Login> {
   String _email, _password;
 
   checkAuthentification() async {
-    _auth.onAuthStateChanged.listen((user) {
+    FirebaseAuth.instance.authStateChanges().listen((user) {
       if (user != null) {
         print(user);
 
@@ -36,8 +36,8 @@ class _LoginState extends State<Login> {
       _formKey.currentState.save();
 
       try {
-        FirebaseUser user = (await _auth.signInWithEmailAndPassword(
-            email: _email, password: _password)) as FirebaseUser;
+        User user = (await _auth.signInWithEmailAndPassword(
+            email: _email, password: _password)) as User;
       } catch (e) {
         showError(e.message);
         print(e);

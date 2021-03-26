@@ -8,7 +8,7 @@ class Logout extends StatefulWidget {
 
 class _StartState extends State<Logout> {
   final FirebaseAuth _auth = FirebaseAuth.instance;
-  FirebaseUser user;
+  User user;
   bool isloggedin= false;
   signOut()async{
 

@@ -14,7 +14,7 @@ class _SignUpState extends State<SignUp> {
   String _name, _email, _password;
 
   checkAuthentication() async {
-    _auth.onAuthStateChanged.listen((user) async {
+    FirebaseAuth.instance.authStateChanges().listen((user) async {
       if (user != null) {
         Navigator.push(
             context, MaterialPageRoute(builder: (context) => Login()));
@@ -33,12 +33,12 @@ class _SignUpState extends State<SignUp> {
       _formKey.currentState.save();
 
       try {
-        FirebaseUser user = (await _auth.createUserWithEmailAndPassword(
-            email: _email, password: _password)) as FirebaseUser;
+        User user = (await _auth.createUserWithEmailAndPassword(
+            email: _email, password: _password)) as User;
         if (user != null) {
-          UserUpdateInfo updateuser = UserUpdateInfo();
-          updateuser.displayName = _name;
-          user.updateProfile(updateuser);
+          User updateuser = FirebaseAuth.instance.currentUser;
+          updateuser.updateProfile(displayName: _name);
+          user.updateProfile();
         }
       } catch (e) {
         showError(e.message);
