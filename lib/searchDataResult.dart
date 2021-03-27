@@ -99,6 +99,7 @@ class SearchDataResult extends StatelessWidget {
                                           Text("Destination: " +data['To']),
                                           Text("Route Length: " +data['Route_Length']),
                                           Text("Depot Code: " +data['Depot']),
+                                          Text("Route Number: " +data['Route_no']),
                                         ],
                                       ),
                                     ),

@@ -29,7 +29,7 @@ wait
 print_blue "\n\n\n Build Created...\n"
 #Install APK on device / emulator
 print_blue "\n\n\nInstalling APK on emulator...\n"
-flutter install app-release.apk
+flutter install app-armeabi-v7a-release.apk
 print_blue "Done Installing\n"
 print_blue "\n\n\n Launching Now..\n"
 wait
