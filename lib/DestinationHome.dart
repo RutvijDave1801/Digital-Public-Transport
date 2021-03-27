@@ -25,15 +25,15 @@ class _HomeState extends State<DestinationHome> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Search"),
+        title: Text("Destination"),
         centerTitle: true,
       ),
       body:  Column(
         children: <Widget>[
 
 
-          Container(
-            height: 400,
+          Expanded(
+
             child: Image(
               image: AssetImage("images/reach.jpg"),
               fit: BoxFit.contain,
@@ -86,7 +86,7 @@ class _HomeState extends State<DestinationHome> {
               ],
             ),
           ),
-          MaterialButton(
+          RaisedButton(
             onPressed: () {
               print("pressed");
               Navigator.push(

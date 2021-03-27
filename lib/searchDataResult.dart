@@ -1,3 +1,5 @@
+
+import 'package:authentification/PaymentPage.dart';
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:authentification/DestinationHome.dart';
@@ -15,11 +17,29 @@ class SearchDataResult extends StatelessWidget {
   SearchDataResult({this.source, this.destination, this.number});
 
   @override
+
   Widget build(BuildContext context) {
+    navigateToDestination() async {
+      Navigator.push(context, MaterialPageRoute(builder: (context) => DestinationHome()));
+    }
+
+    navigateToPayment() async {
+      Navigator.push(context, MaterialPageRoute(builder: (context) => PaymentPage()));
+    }
     return Scaffold(
       appBar: AppBar(
         title: Text("Available Transport"),
         centerTitle: true,
+        actions: <Widget>[
+          FlatButton(
+
+            textColor: Colors.black,
+            onPressed: navigateToDestination,
+            child: Text("Undo"),
+
+            shape: CircleBorder(side: BorderSide(color: Colors.transparent)),
+          ),
+        ],
       ),
       body: Column(
         children: [
@@ -55,8 +75,9 @@ class SearchDataResult extends StatelessWidget {
                                 final snackBar = SnackBar(
                                   content: Text('Finally! You selected your destination!'),
                                   action: SnackBarAction(
-                                    label: '',
-                                    onPressed: navigateToDestination,
+                                    label: 'Proceed',
+                                    textColor: Colors.blue,
+                                    onPressed: navigateToPayment,
                                   ),
                                 );
 

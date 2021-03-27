@@ -1,3 +1,4 @@
+import 'package:authentification/DestinationHome.dart';
 import 'package:authentification/DestinationPage.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -20,7 +21,7 @@ class _LoginState extends State<Login> {
         print(user);
 
         Navigator.push(
-            context, MaterialPageRoute(builder: (context) => DestinationPage()));
+            context, MaterialPageRoute(builder: (context) => DestinationHome()));
       }
     });
   }
