@@ -73,7 +73,7 @@ class SearchDataResult extends StatelessWidget {
                             child: GestureDetector(
                               onTap: () {
                                 final snackBar = SnackBar(
-                                  content: Text('Finally! You selected your destination!'),
+                                    duration: Duration(seconds: 10),content: Text('Finally! You selected your destination!'),
                                   action: SnackBarAction(
                                     label: 'Proceed',
                                     textColor: Colors.blue,
